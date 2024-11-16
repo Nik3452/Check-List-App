@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checklist App</title>
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<h1>Checklist App</h1>
+<h2>What Does this Application Provide?</h2>
+<p>A checklist you can use from anywhere in the world!<br> Keep all your items here to make sure you never forget!</p>
+<h2>What Real Life world application does this have?</h2>
+<p>You can use this to track assignment and their due date's with this application!</p>
+<h2>Does this save my progress?</h2>
+<p>Yes this is a Cookie based Save system that will use local storage to store values!</p>
+<div class="container">
+    <div class="left-column">
+        <div class="input-container">
+            <label for="itemInput">Item:</label>
+            <input type="text" id="itemInput">
+            <label for="dateInput">Date:</label>
+            <input type="date" id="dateInput">
+        </div>
+        <div class="button-container">
+            <button id="addItem">Add Item</button>
+            <button id="clearBtn">Clear All</button>
+        </div>
+    </div>
+    <div class="right-column">
+        <div id="items">
+            <ul id="itemList">
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<footer>&copy; 2024 Nikita Kramtsaninov. All rights reserved.</footer>
+</html>

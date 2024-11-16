@@ -1,0 +1,149 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding-bottom: 50px; /* Add padding to the bottom */
+}
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+label {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+input {
+    display: block;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: center;
+}
+.input-container {
+    text-align: center;
+}
+
+.input-container label,
+.input-container input {
+    display: block;
+    margin: 10px auto;
+}
+
+.input-container .inline-label,
+.input-container .inline-input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.input-container .inline-label {
+    margin-right: 10px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add space between buttons */
+}
+#addItem, #clearBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: block;
+    margin: 20px auto; /* Center the button */
+    text-align: center;
+}
+.remItem {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: small;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 300px;
+}
+
+.right-column {
+    flex: 2;
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+}
+
+#items {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    min-height: 400px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 0.9em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column, .right-column {
+        max-width: 100%;
+        padding: 0;
+        border: none;
+    }
+
+    .right-column {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    #addItem, #clearBtn {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .remItem {
+        font-size: 0.8em;
+    }
+}
