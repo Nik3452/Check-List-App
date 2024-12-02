@@ -1,9 +1,10 @@
 $(document).ready(function() {
     const storedItems = JSON.parse(localStorage.getItem('items')) || [];
-    const currentDate = new Date().toISOString().slice(0, 10);
+    const currentDate = new Date()
 
     storedItems.forEach((item, index) => {
-        if (item.date < currentDate) {
+        const date = new Date(item.date)
+        if (currentDate.getDate() > date.getDate()) {
             storedItems.splice(index);
         }
     });
